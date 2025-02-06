@@ -1,0 +1,23 @@
+@import "scss/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-dark;
+  color: $primary;
+  font-family: $font;
+}
+
+::selection {
+  background: $main-green;
+  color: white;
+}
+
+::-moz-selection {
+  background: $main-green;
+  color: white;
+}

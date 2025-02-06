@@ -1,0 +1,28 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+.chat {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+  padding: 0 16px;
+
+  .icon {
+    height: 48px;
+    user-select: none;
+  }
+
+  .chatInfo {
+    @include flex-column;
+    width: 100%;
+    gap: 4px;
+    padding: 18px 0;
+    border-bottom: 1px solid $main-dark-hover;
+  }
+
+  &:hover {
+    background-color: $main-dark-hover;
+  }
+}

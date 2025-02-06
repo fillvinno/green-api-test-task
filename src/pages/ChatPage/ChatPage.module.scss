@@ -1,0 +1,22 @@
+@import "../../scss/mixins";
+
+.wrap {
+  display: flex;
+  background-image: url('/src/assets/bg-texture.svg');
+  background-size: 30%;
+  height: 100vh;
+
+  .noChat {
+    @include flex-center;
+    width: 100%;
+
+    span {
+      @include no-select;
+      padding: 80px;
+      border-radius: 50px;
+      background-color: $main-dark;
+      border: 1px solid $menu-grey;
+      box-shadow: 4px 4px 8px 0px rgba(42, 57, 66, 0.2);
+    }
+  }
+}

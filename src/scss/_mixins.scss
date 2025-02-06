@@ -1,0 +1,44 @@
+@import "variables";
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin out-brd-reset {
+  border: none;
+  outline: none;
+}
+
+@mixin no-select {
+  user-select: none;
+  pointer-events: none;
+}
+
+@mixin add-chat-input {
+  @include out-brd-reset;
+  background-color: $chat-input-grey;
+  color: lightgray;
+  padding: 8px 16px;
+  border-radius: $brdr-main;
+  width: 100%;
+}
+
+@mixin message {
+  display: flex;
+  //width: fit-content;
+  //max-width: 450px;
+  background-color: $chat-input-grey;
+  padding: clamp(6px, 5%, 8px) clamp(8px, 5%, 16px);
+  border-radius: 20px;
+
+  @media (max-width: 150px) {
+    padding: 16px 18px;
+  }
+}
