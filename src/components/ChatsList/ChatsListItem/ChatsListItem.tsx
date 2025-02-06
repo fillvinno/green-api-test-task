@@ -1,5 +1,5 @@
 import styles from './ChatsListItem.module.scss'
-import {FC, useEffect} from "react";
+import {FC} from "react";
 import {chatSlice} from "../../../store/reducers/chatSlice.ts";
 import {TChat} from "../../../models/types.ts";
 import {useAppSelector} from "../../../hooks/useAppSelector.ts";

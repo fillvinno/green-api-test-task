@@ -3,7 +3,8 @@ import {useAppSelector} from "../hooks/useAppSelector.ts";
 import {authRoutes, publicRoutes} from "../utils/routes.tsx";
 import {useEffect} from "react";
 import {useAppDispatch} from "../hooks/useAppDispatch.ts";
-import {authSlice, Instance} from "../store/reducers/authSlice.ts";
+import {authSlice} from "../store/reducers/authSlice.ts";
+import {Instance} from "../models/types.ts";
 
 const renderRoutes = (isAuth: boolean) => {
   if (isAuth) {
