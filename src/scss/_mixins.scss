@@ -32,11 +32,12 @@
 
 @mixin message {
   display: flex;
-  //width: fit-content;
-  //max-width: 450px;
+  max-width: 350px;
   background-color: $chat-input-grey;
   padding: clamp(6px, 5%, 8px) clamp(8px, 5%, 16px);
   border-radius: 20px;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   @media (max-width: 150px) {
     padding: 16px 18px;

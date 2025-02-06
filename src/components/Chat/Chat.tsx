@@ -84,7 +84,7 @@ const Chat: FC<Props> = ({chat}) => {
             className={styles.messageInput}
             placeholder={'Введите сообщение'}
             autoComplete="off"
-            {...register('message')}
+            {...register('message', {required: true})}
           />
           <button
             className={styles.sendMessageBtn}
